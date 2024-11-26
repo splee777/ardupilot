@@ -70,14 +70,9 @@ class Board:
             'AP_Scripting/lua/src',
         ]
 
-        if cfg.options.enable_scripting:
-            env.DEFINES.update(
-                AP_SCRIPTING_ENABLED = 1,
-            )
-        elif cfg.options.disable_scripting:
-            env.DEFINES.update(
-                AP_SCRIPTING_ENABLED = 0,
-            )
+        env.DEFINES.update(
+            AP_SCRIPTING_ENABLED = 1,
+        )
 
         # allow GCS disable for AP_DAL example
         if cfg.options.no_gcs:

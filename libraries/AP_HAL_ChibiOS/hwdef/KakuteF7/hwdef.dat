@@ -162,3 +162,5 @@ define HAL_MSP_ENABLED 1
 # need to probe external baros even 'though we're minimised to allow custom build options:
 undef AP_BARO_PROBE_EXTERNAL_I2C_BUSES
 define AP_BARO_PROBE_EXTERNAL_I2C_BUSES 1
+undef GPS_MOVING_BASELINE
+define GPS_MOVING_BASELINE 1
